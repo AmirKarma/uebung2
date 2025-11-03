@@ -34,4 +34,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ env.REGISTRY }}/${{ github.repository_owner | toLowerCase }}/${{ github.event.repository.name | toLowerCase }}:latest
+          tags: ${{ env.REGISTRY }}/${{ github.repository_owner | toLowerCase() }}/${{ github.event.repository.name | toLowerCase() }}:latest
